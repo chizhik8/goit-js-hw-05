@@ -23,7 +23,7 @@ class Car {
 
     turnOff() {this.isOn = false, this.speed = 0;}
 
-    accelerate(value) {if (value < this.maxSpeed) { this.speed += value;};}
+    accelerate(value) {if ( this.speed+value < this.maxSpeed) { this.speed += value;};}
 
     decelerate(value) {if (value <= this.speed) { this.speed -= value};}
 
@@ -49,3 +49,6 @@ Car.getSpecs(mustang);
 console.log(mustang.price); // 2000
 mustang.price = 4000;
 console.log(mustang.price); // 4000
+
+
+

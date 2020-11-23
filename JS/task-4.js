@@ -14,11 +14,11 @@ class StringBuilder {
     }
     
     prepend(str) {
-        return this._value = `${str}` + `${this._value}`;
+        return this._value = `${str}${this._value}`;
     }
     
     pad(str) {
-        return this._value = `${str}` + `${this._value}` + `${str}`;
+        return this._value = `${str}${this._value}${str}`;
     }
     
 }
